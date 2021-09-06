@@ -1,0 +1,20 @@
+66c66
+< # copy_extensions = copy
+---
+> copy_extensions = copy
+125c125
+< # req_extensions = v3_req # The extensions to add to a certificate request
+---
+> req_extensions = v3_req # The extensions to add to a certificate request
+222a223,226
+> extendedKeyUsage  = serverAuth, clientAuth
+> 
+> [ alt_names ]
+> DNS.1 = localhost
+225a230,235
+> basicConstraints        = critical, CA:TRUE
+> subjectKeyIdentifier    = hash
+> authorityKeyIdentifier  = keyid:always, issuer:always
+> keyUsage                = critical, digitalSignature, cRLSign, keyCertSign
+> extendedKeyUsage  = serverAuth, clientAuth
+> subjectAltName = @alt_names
