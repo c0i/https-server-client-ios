@@ -1,4 +1,6 @@
-# HTTPSConnectDemo
-使用OC和Swift两种语言，通过NSURLSession进行HTTPS验证
+# https-server-client-ios
 
-+ 符合苹果规范的服务器证书
+1. How to verify https with self-signed certificate (objc and swift language)
+2. How to generate a self-signed certificate for Apple
+
+demo with https://localhost:443
